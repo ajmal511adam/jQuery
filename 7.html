@@ -4,25 +4,23 @@
 	<title></title>
 	<style type="text/css">
 		.rect{
-			height: 100px;
+			height: 150px;
 			width: 20%;
 			background-color: yellow;
 			position: relative;
+			margin: 100px 100px 100px 550px;
+		}
+		.mybtn1{
+		margin: -56px 100px 100px 100px;
+		/*padding: 10px 10px 10px 10px;	*/
 		}
 	</style>
 	<script src="jquery-3.4.1.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			$('.mybtn').click(function(){
-$('.rect').animate({
-	right:"40px"
-},function(){
-});
-
-});
 			$('.mybtn1').click(function(){
 $('.rect').animate({
-	left:"40px"
+	left:"100px"
 },function(){
 });
 
@@ -32,8 +30,7 @@ $('.rect').animate({
 	</script>
 </head>
 <body>
-<div class="rect">13</div>
-<input type="button" name="" value="right" class="mybtn">
-<input type="button" name="" value="left" class="mybtn1">
+<div class="rect"></div>
+<center><input type="button" name="" value="move right" class="mybtn1"></center>
 </body>
 </html>
