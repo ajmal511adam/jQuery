@@ -15,14 +15,15 @@ height: 100px;
 		}
 		</style>
 		<script src="jquery-3.4.1.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$('#abox').hide();
-		});
-	</script>
+		<script>	
+	$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").hide();
+  });
+});
+</script>
 </head>
 <body>
-<div class="box"></div><br><br>
-<div id="abox"></div>
+<p class="btn1">This is a paragraph.</p>
 </body>
 </html>
