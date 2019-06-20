@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-<style type="text/css">
-	#bl{
-		height: 100px;
-		width: 100px;
-		background-color: white;
-	}
-</style>
 <script src="jquery-3.4.1.min.js"></script>
-<script type="text/javascript">
-	$(function(){
-	$('#bll').mouseover(function(){
-		alert("you mouse overed on it");
-	},function(){
-	$('#bll').mouseout(function(){
-		alert("you mouse out from it");
-	});
+<script>
+$(document).ready(function(){
+  $("p").mouseover(function(){
+    alert("You mouseovered on it");
+  });
+  $("p").mouseout(function(){
+    alert("You  exited!");
+  });
 });
 </script>
 </head>
 <body>
-	<div id="bl">
-<p id="bll">ajmal</p></div>
+<p>Move the mouse pointer over this paragraph.</p>
 </body>
 </html>
+
