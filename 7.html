@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.rect{
+			height: 100px;
+			width: 20%;
+			background-color: yellow;
+			position: relative;
+		}
+	</style>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.mybtn').click(function(){
+$('.rect').animate({
+	right:"40px"
+},function(){
+});
+
+});
+			$('.mybtn1').click(function(){
+$('.rect').animate({
+	left:"40px"
+},function(){
+});
+
+});
+		});
+		
+	</script>
+</head>
+<body>
+<div class="rect">13</div>
+<input type="button" name="" value="right" class="mybtn">
+<input type="button" name="" value="left" class="mybtn1">
+</body>
+</html>

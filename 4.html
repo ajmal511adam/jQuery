@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	#bl{
+		height: 100px;
+		width: 100px;
+		background-color: white;
+	}
+</style>
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+	$('#bll').mouseover(function(){
+		alert("you mouse overed on it");
+	},function(){
+	$('#bll').mouseout(function(){
+		alert("you mouse out from it");
+	});
+});
+</script>
+</head>
+<body>
+	<div id="bl">
+<p id="bll">ajmal</p></div>
+</body>
+</html>
